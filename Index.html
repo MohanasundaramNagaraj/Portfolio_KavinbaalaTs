@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kavinbaala TS</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="kavinbala_transparent.png" />
 </head>
 
 <body>
@@ -15,10 +18,11 @@
     <nav class="navbar animate-on-scroll">
         <div class="logo animate-on-scroll" style="display: inline-flex;">
             <img src="kavinbala_transparent.png" alt="Logo" style="height:30px" class="animate-on-scroll" />
-            <p class="animate-on-scroll">Kavinbaala TS</p>
+            <p class="animate-on-scroll" id="navLogoText">  Kavinbaala TS</p>
         </div>
         <ul class="nav-links animate-on-scroll" id="navLinks">
             <li class="animate-on-scroll"><a href="#home" class="animate-on-scroll">About Us</a></li>
+            <li class="animate-on-scroll"><a href="#services" class="animate-on-scroll">Services</a></li>
             <li class="animate-on-scroll"><a href="#mission" class="animate-on-scroll">Our Mission</a></li>
             <li class="animate-on-scroll"><a href="#global" class="animate-on-scroll">Global Presence</a></li>
             <li class="animate-on-scroll"><a href="#strengths" class="animate-on-scroll">Our Strengths</a></li>
@@ -31,14 +35,82 @@
     <!-- Hero Section -->
     <header class="hero animate-on-scroll" id="home" style="height: 100vh;">
         <div class="hero-content animate-on-scroll" data-aos="fade-up">
+            <h1 class="animate-on-scroll" style="    font-size: xx-large;">Kavinbaala TS</h1>
+            <br class="animate-on-scroll">
             <h1 class="animate-on-scroll">Manufacturers & Exporters of Knitted and Woven Garments</h1>
             <br class="animate-on-scroll">
             <p class="animate-on-scroll">Globally Trusted Export House</p>
             <br class="animate-on-scroll">
             <a href="#contact" class="btn animate-on-scroll">Contact Us</a>
+             <!-- Social Icons -->
+            <div class="social-icons animate-on-scroll">
+                <a href="mailto:kavinbaala@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/919843125473" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </header>
     <img src="Image 1.jpg" alt="Garments" style="width: 100%;" class="animate-on-scroll" />
+    <br>
+    <br>
+    <!--Services-->
+    <section class="services animate-on-scroll" id="services" data-aos="fade-up">
+        <h2 class="animate-on-scroll">Our Services</h2>
+        <div class="service-grid animate-on-scroll">
+
+            <div class="service-card animate-on-scroll">
+                <h3 class="animate-on-scroll">Garment Manufacturing & Exports</h3>
+                <p class="animate-on-scroll">Knitted and woven wear for men, women, and kids, crafted to global
+                    standards with care and commitment.</p>
+            </div>
+             <br>
+             <br>
+
+            <div class="service-card animate-on-scroll">
+                <h3 class="animate-on-scroll">Product Development</h3>
+                <p class="animate-on-scroll">From design to sampling, we help create styles that match your brand’s
+                    vision and market needs.</p>
+            </div>
+             <br>
+             <br>
+
+            <div class="service-card animate-on-scroll">
+                <h3 class="animate-on-scroll">Quality Checks</h3>
+                <p class="animate-on-scroll">Every piece is carefully inspected to ensure comfort, durability, and
+                    perfection before it reaches you.</p>
+            </div>
+             <br>
+             <br>
+
+            <div class="service-card animate-on-scroll">
+                <h3 class="animate-on-scroll">Sourcing & Merchandising</h3>
+                <p class="animate-on-scroll">Fabrics, trims, and accessories sourced responsibly and cost-effectively to
+                    balance quality and value.</p>
+            </div>
+             <br>
+             <br>
+
+            <div class="service-card animate-on-scroll">
+                <h3 class="animate-on-scroll">On-Time Delivery</h3>
+                <p class="animate-on-scroll">Reliable timelines, smooth processes, and global shipping to ensure your
+                    products reach you on time.</p>
+            </div>
+             <br>
+             <br>
+
+            <div class="service-card animate-on-scroll">
+                <h3 class="animate-on-scroll">Sustainability</h3>
+                <p class="animate-on-scroll">We follow ethical practices and support eco-friendly choices to create a
+                    better tomorrow.</p>
+            </div>
+             <br>
+             <br>
+
+        </div>
+    </section>
+   
     <!-- About -->
     <section class="about animate-on-scroll" data-aos="fade-up">
         <div class="content animate-on-scroll who-we-are-container">
@@ -171,10 +243,12 @@
     <section id="contact" class="contact animate-on-scroll" data-aos="fade-up">
         <h2 class="animate-on-scroll">Stay Connected</h2>
         <div id="contactForm" class="animate-on-scroll">
-            <input type="text" name="firstName" placeholder="First Name *" id="firstName" required class="animate-on-scroll" />
+            <input type="text" name="firstName" placeholder="First Name *" id="firstName" required
+                class="animate-on-scroll" />
             <input type="text" name="lastName" placeholder="Last Name" id="lastName" class="animate-on-scroll" />
             <input type="email" name="email" placeholder="Email *" id="email" required class="animate-on-scroll" />
-            <textarea name="message" rows="4" placeholder="Message *" id="message" required class="animate-on-scroll"></textarea>
+            <textarea name="message" rows="4" placeholder="Message *" id="message" required
+                class="animate-on-scroll"></textarea>
             <button onclick="sendMail()" class="btn animate-on-scroll">Submit</button>
         </div>
     </section>
@@ -186,7 +260,7 @@
             <!-- Logo -->
             <div class="footer-logo animate-on-scroll">
                 <img src="kavinbala_transparent.png" alt="Logo" style="height:100px;" class="animate-on-scroll" />
-            </div>
+            </div>  
 
             <!-- Company Info -->
             <div class="footer-info animate-on-scroll" style="text-align:center;">
@@ -198,9 +272,20 @@
                     &copy; 2025 Kavinbaala TS. All rights reserved.
                 </p>
             </div>
+
+             <div class="social-icons animate-on-scroll">
+                <a href="mailto:kavinbaala@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://wa.me/919843125473" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
+    <a href="https://wa.me/919843125473" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>

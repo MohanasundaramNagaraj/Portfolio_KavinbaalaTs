@@ -45,6 +45,18 @@ ul {
     color: #5633b8;
 }
 
+#navLogoText {
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 10px;
+}
+
+#navLogoText.show {
+    opacity: 1;
+    visibility: visible;
+    margin-left: 10px;
+}
+
 .navbar ul {
     display: flex;
     list-style: none;
@@ -75,6 +87,9 @@ ul {
     text-align: center;
     padding: 5rem 1rem;
     background: #fafafa;
+    /* https://grabient.com/HQdgLAbANKkwnPAzFAtABmAJnQRhruumpocRsGDiZVtBZGDOgKwsw4g1ZVA?style=linearGradient&steps=5&angle=45 */
+
+    background: linear-gradient(45deg, rgba(142, 197, 252, 1.000) 0.000%, rgba(141, 211, 255, 1.000) 25.000%, rgba(161, 216, 255, 1.000) 50.000%, rgba(193, 210, 255, 1.000) 75.000%, rgba(224, 195, 255, 1.000) 100.000%)
 }
 
 .hero h1 {
@@ -101,6 +116,27 @@ ul {
     background: #9c7428;
 }
 
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #25d366; /* WhatsApp green or brand highlight */
+    transform: scale(1.2);
+}
+
+
+
+
 /* Sections */
 section {
     padding: 3rem 1.5rem;
@@ -113,6 +149,7 @@ section {
     gap: 2rem;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 .highlight {
@@ -126,6 +163,7 @@ section {
     display: grid !important;
     grid-template-columns: 1fr; /* default: mobile view full width */
     gap: 20px;
+    
   }
 
   /* Tablet & Desktop: 2 columns */
@@ -325,3 +363,30 @@ footer p {
       opacity: 1;
       transform: translateY(0);
     }
+
+    .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}

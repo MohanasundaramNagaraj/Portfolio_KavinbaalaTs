@@ -17,6 +17,28 @@ function sendMail() {
     window.location.href = `mailto:kavinbaala@gmail.com?subject=${subject}&body=${body}`;
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const hero = document.getElementById("home");
+    const navLogoText = document.getElementById("navLogoText");
+
+    // Ensure it's hidden initially
+    navLogoText.classList.remove("show");
+
+    const _observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Hero is visible → keep logo text hidden
+                navLogoText.classList.remove("show");
+            } else {
+                // Hero out of view → show logo text
+                navLogoText.classList.add("show");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    _observer.observe(hero);
+});
+
 const elements = document.querySelectorAll(".animate-on-scroll");
 
     const observer = new IntersectionObserver(entries => {
@@ -24,7 +46,7 @@ const elements = document.querySelectorAll(".animate-on-scroll");
         if (entry.isIntersecting) {
           setTimeout(() => {
             entry.target.classList.add("show");
-          }, 500); // 500ms delay
+          }, 100); // 500ms delay
         }
       });
     }, { threshold: 0.2 });
