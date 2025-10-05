@@ -203,10 +203,15 @@ img.animate-on-scroll {
 /* === SERVICES SECTION === */
 .service-grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
 }
 
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
 .service-card {
     background: var(--card-background);
     padding: 30px;
@@ -214,6 +219,14 @@ img.animate-on-scroll {
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #eee;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
 }
 
 .service-card:hover {

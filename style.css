@@ -79,6 +79,37 @@ ul {
     cursor: pointer;
 }
 
+.section-header {
+    background: linear-gradient(
+        45deg,
+        rgba(142, 197, 252, 1) 0%,
+        rgba(141, 211, 255, 1) 25%,
+        rgba(161, 216, 255, 1) 50%,
+        rgba(193, 210, 255, 1) 75%,
+        rgba(224, 195, 255, 1) 100%
+    );
+    -webkit-background-clip: text;   
+    -webkit-text-fill-color: transparent;
+    background-clip: text;           
+    color: transparent;
+}
+
+.card-header {
+    background: linear-gradient(
+        45deg,
+        rgba(142, 197, 252, 1) 0%,
+        rgba(141, 211, 255, 1) 25%,
+        rgba(161, 216, 255, 1) 50%,
+        rgba(193, 210, 255, 1) 75%,
+        rgba(224, 195, 255, 1) 100%
+    );
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    background-clip: text;           
+    color: transparent;
+}
+
+
 /* Hero */
 .hero {
     display: flex;
