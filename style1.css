@@ -141,75 +141,50 @@ section {
 }
 
 /* === HERO SECTION === */
-/* Hero section fills the viewport */
-/* HERO CONTAINER */
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full screen height */
-  overflow: hidden; /* Prevents video overflow */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  overflow: hidden;
   color: white;
+  text-align: center;
 }
 
-/* BACKGROUND VIDEO */
+/* Make the video cover the whole background */
 .hero-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Fill entire area */
+  object-fit: cover; /* ensures full coverage */
   z-index: 0;
-  filter: brightness(50%) blur(1px); /* <== makes text more visible */
-  transition: filter 0.3s ease;
+  filter: brightness(60%); /* darkens video slightly for better text contrast */
 }
 
-/* OPTIONAL: Slight fade gradient overlay */
-.hero::before {
+/* Add a dark overlay for readability */
+.hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
-/* HERO TEXT CONTENT */
+/* Content sits above video */
 .hero-content {
   position: relative;
-  z-index: 2; /* above video and overlay */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 15px;
+  z-index: 2;
 }
 
-.hero-content .logo {
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.hero-content h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.hero-content h2 {
-  font-size: clamp(1.2rem, 3vw, 2rem);
-  font-weight: 400;
-  color: #f2f2f2;
-  margin-bottom: 10px;
-}
-
+.hero-content h1,
 .hero-content p {
-  font-size: 1.1rem;
-  color: #ddd;
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
+
 
 /* .hero-content {
     display: flex;
@@ -352,6 +327,7 @@ img.animate-on-scroll {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    width: 100%;
     height: 500px;
     object-fit: cover;
     display: block;
@@ -419,6 +395,7 @@ img.animate-on-scroll {
 
     .workflow-image {
         height: 500px;
+        width: 100%;
         object-fit: cover;
         object-position: center;
         margin: 0 auto;
@@ -462,6 +439,7 @@ img.animate-on-scroll {
 
     .workflow-image {
         height: 450px;
+        width: 100%;
         object-fit: cover;
         object-position: center;
         margin: 0 auto;
@@ -815,6 +793,13 @@ a {
 }
 
 
+.hero-video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
 #background-video {
     width: 100%;
     height: auto;
@@ -924,7 +909,7 @@ a {
     position: relative;
 }
 .workflow-image {
-    width: 540px;
+    width: 100%;
     height: 500px;
     display: block;
     object-fit: cover;
@@ -1291,13 +1276,22 @@ a {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
+footer {
+    background-color: var(--color-light-gray);
+    padding: 80px 0 40px;
+}
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 40px;
 }
-
+.footer-logo {
+    margin-bottom: 20px;
+}
+.footer-logo img {
+    max-height: 50px;
+    width: 200px;
+}
 .footer-about {
     color: var(--color-dark-gray);
     margin-bottom: 20px;
@@ -1428,7 +1422,15 @@ a {
     display: block;
     margin-bottom: 15px;
 }
-
+.hero-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
 #background-video {
     width: 100%;
     height: 100%;
@@ -1722,7 +1724,32 @@ a {
 .absologo {
     height: 12px;
 }
-
+.hero {
+    padding: 120px 0 80px;
+}
+.hero-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+.hero-content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.hero-subtitle {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+.hero-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.hero-cta {
+    justify-content: center;
+}
 .video-controls {
     opacity: 0;
 }
@@ -2578,7 +2605,10 @@ body.has-notification .hero {
     color: white;
     font-size: 30px;
 }
-
+.hero-video {
+    position: relative;
+    z-index: 1;
+}
 .video-overlay {
     z-index: 5;
 }

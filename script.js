@@ -44,34 +44,34 @@ document.addEventListener("DOMContentLoaded", function () {
  // ===== WORKFLOW SLIDER WITH FIXED DRAG FUNCTIONALITY =====
     const materialsSlides = [
         {
-          image: "born baby.jpg",
-          title: "Born Baby",
-          description: "We create soft, comfortable, and stylish dresses specially designed for newborn babies. Each piece is made with love and care to keep your little one cozy and happy. Perfect for every precious moment!"
+          image: "https://portugaltextile.com/wp-content/uploads/elementor/thumbs/IMG_8175-1-scaled-qrom0ph4bltrbmocxdc9bu5is9d5ouo07l2nzyruzk.webp",
+          title: "Organic Cotton",
+          description: "Cotton grown without synthetic pesticides or fertilizers, using methods that have a lower impact on the environment. Organic farming practices promote biodiversity and healthier soil."
         },
         {
-          image: "https://cdn.shopify.com/s/files/1/1993/5303/files/toddler_boy_best_sellers_x800_3ebd8b50-c191-4cbf-9473-adbe90adc243.jpg?v=1703591191",
-          title: "Toddler Boy",
-          description: "Cute, comfy, and cool — just like your little boy! Discover our toddler boy collection made with soft fabrics and playful designs. Perfect for every giggle, adventure, and cuddle."
+          image: "https://portugaltextile.com/wp-content/uploads/elementor/thumbs/Instagram-story-64-qrohe6ehi9uyeokjcdxqkuzm0q63zbjzbc7t55otcw.webp",
+          title: "Cupro",
+          description: "A regenerated cellulose fiber made from cotton linter (the short fibers adhering to cotton seeds after ginning). Considered a by-product of the cotton industry with silk-like properties."
         },
         {
-          image: "https://thetrendytoddlers.com/cdn/shop/products/12_ef286b6a-7ab2-43b6-b0bf-e6392814a9d2_840x.progressive.jpg?v=1674870513",
-          title: "Toddler Girl",
-          description: " Twirl, play, and shine! Our toddler girl dresses are made for comfort and cuteness. Soft, stylish, and perfect for every tiny fashionista"
+          image: "https://portugaltextile.com/wp-content/uploads/elementor/thumbs/Novo-Projeto-28-qrojdbsott9b837yvn43temorphbmj0jfhxxw670dc.png",
+          title: "Lyocell",
+          description: "A sustainable fiber made from wood pulp, typically eucalyptus, using an environmentally responsible closed-loop process that reuses solvents. Known for its exceptional softness."
         },
         {
-          image: "https://xyxxcrew.com/cdn/shop/files/mens-nova-combed-cotton-polo-t-shirts-sky-blue-lookshot-1.webp?v=1718795262",
-          title: "Men",
-          description: "For the man who values style and comfort.Explore our latest collection of men’s wear — bold looks, perfect fits, lasting quality. Dress your best, effortlessly."
+          image: "https://portugaltextile.com/wp-content/uploads/elementor/thumbs/IMG_8175-2-scaled-qrom7qbpe1fw2qh2wwmwgkcikwqw7fjsucka3ecyhs.webp",
+          title: "Ecovero",
+          description: "A type of viscose fiber derived from sustainable wood sources with EU Ecolabel certification. Ecovero has up to 50% lower emissions and water impact than conventional viscose."
         },
         {
-          image: "https://www.pinklay.com/cdn/shop/products/PinklayBanyanLeafCottonSlubPleatedDressWithPockets1.jpg?v=1618746719",
-          title: "Women",
-          description: "Bold. Beautiful. Effortlessly You. Discover our women’s collection — from chic everyday wear to stunning statement pieces. Designed to bring out your inner style icon."
+          image: "https://portugaltextile.com/wp-content/uploads/elementor/thumbs/Novo-Projeto-qrtipi5arz9zjt9jccyby7nqzjt54dl5qlrnvtk2ow.webp",
+          title: "Recycled Wool",
+          description: "Wool fibers reclaimed from pre-consumer or post-consumer textile waste, processed, and respun into new yarn. This reduces the need for virgin wool production and diverts textile waste."
         },
         {
-          image: "https://static.wixstatic.com/media/89f863_d78908e663134dd9b11c9dd68d107a81~mv2.jpg/v1/fill/w_528,h_528,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/89f863_d78908e663134dd9b11c9dd68d107a81~mv2.jpg",
-          title: "Woven Materials",
-          description: "Strong weaves. Soft touch. Endless possibilities. Discover woven fabrics designed for comfort, durability, and style. Perfect for every stitch that matters.."
+          image: "https://portugaltextile.com/wp-content/uploads/elementor/thumbs/Novo-Projeto-30-1-qrtjc617k6avhccf05mi2hrum03qpnk66s14fzyco0.png",
+          title: "Biodegradable polyester",
+          description: "An innovative alternative to conventional polyester that maintains performance properties while being designed to break down at the end of its lifecycle, reducing long-term plastic pollution."
         }
     ];
 
@@ -147,6 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 -webkit-user-select: none;
                 -moz-user-select: none;
                 -ms-user-select: none;
+                width: 100%;
                 height: 500px;
                 object-fit: cover;
                 display: block;
