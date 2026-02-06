@@ -60,11 +60,9 @@ h4 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
-    background: var(--gradient);
+   background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
 }
 
 section {
@@ -96,11 +94,9 @@ section {
 #navLogoText {
     font-weight: 600;
     font-size: 1.2rem;
-    background: var(--gradient);
+    background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
 }
 
 .nav-links {
