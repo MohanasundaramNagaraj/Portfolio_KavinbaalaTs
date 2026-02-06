@@ -1289,7 +1289,7 @@ footer {
     margin-bottom: 20px;
 }
 .footer-logo img {
-    max-height: 50px;
+   
     width: 200px;
 }
 .footer-about {
@@ -1423,7 +1423,7 @@ footer {
     margin-bottom: 15px;
 }
 .hero-video {
-    position: relative;
+    
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 20px;
@@ -2606,7 +2606,6 @@ body.has-notification .hero {
     font-size: 30px;
 }
 .hero-video {
-    position: relative;
     z-index: 1;
 }
 .video-overlay {
