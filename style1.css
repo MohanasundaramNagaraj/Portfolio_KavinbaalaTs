@@ -795,8 +795,7 @@ a {
 
 .hero-video {
     width: 100%;
-    height: auto;
-    border-radius: 20px;
+   
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 }
@@ -1426,7 +1425,6 @@ footer {
     
     width: 100%;
     aspect-ratio: 1/1;
-    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
     cursor: pointer;
