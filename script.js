@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hero = document.getElementById("home");
     const navLogoText = document.getElementById("navLogoText");
 
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
 
     // Ensure it's hidden initially
     navLogoText.classList.remove("show");
