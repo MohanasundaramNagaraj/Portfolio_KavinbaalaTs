@@ -53,9 +53,9 @@
             <div class="social-icons animate-on-scroll">
                 <a href="mailto:kavinbaala@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 <a href="https://wa.me/919843125473" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" style="display: none;"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" style="display: none;"></i></a>
+                <a href="https://www.instagram.com/kavinbaala_ts?igsh=MWFvaG9rcWcweXEycg==" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </header>
@@ -340,16 +340,31 @@
     <!-- Contact -->
     <section id="contact" class="contact animate-on-scroll" data-aos="fade-up">
         <h2 class="animate-on-scroll section-header">Stay Connected</h2>
-        <div id="contactForm" class="animate-on-scroll">
-            <input type="text" name="firstName" placeholder="First Name *" id="firstName" required
-                class="animate-on-scroll" />
-            <input type="text" name="lastName" placeholder="Last Name" id="lastName" class="animate-on-scroll" />
-            <input type="email" name="email" placeholder="Email *" id="email" required class="animate-on-scroll" />
-            <textarea name="message" rows="4" placeholder="Message *" id="message" required
-                class="animate-on-scroll"></textarea>
-            <button onclick="sendMail()" class="btn animate-on-scroll">Submit</button>
+
+        <div class="contact-wrapper">
+            <!-- LEFT SIDE - FORM -->
+            <div id="contactForm" class="animate-on-scroll">
+                <input type="text" name="firstName" placeholder="First Name *" id="firstName" required />
+                <input type="text" name="lastName" placeholder="Last Name" id="lastName" />
+                <input type="email" name="email" placeholder="Email *" id="email" required />
+                <textarea name="message" rows="4" placeholder="Message *" id="message" required></textarea>
+                <button onclick="sendMail()" class="btn">Submit</button>
+            </div>
+
+            <!-- RIGHT SIDE - MAP -->
+            <div class="contact-map">
+                <iframe 
+                    src="https://www.google.com/maps?q=11.119086265563965,77.37519073486328&z=17&output=embed"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;"
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
         </div>
     </section>
+
 
 
     <!-- Footer -->
@@ -367,9 +382,9 @@
                <div class="social-icons animate-on-scroll">
                     <a href="mailto:kavinbaala@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                     <a href="https://wa.me/919843125473" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" style="display: none;"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" style="display: none;"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/kavinbaala_ts?igsh=MWFvaG9rcWcweXEycg==" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             <div class="footer-info animate-on-scroll animate-on-scroll show" style="display: block;">
@@ -387,7 +402,7 @@
                 <p class="animate-on-scroll"><strong>Kavinbaala TS</strong></p>
                 <p class="animate-on-scroll">+91 98431 25473</p>
                 <p class="animate-on-scroll">kavinbaala@gmail.com</p>
-                <p class="animate-on-scroll">36/TP, P V Nagar, 
+                <p class="animate-on-scroll">3/617B,  P.V.Nagar,
                     <br>Mannarai, Tiruppur - 641 607,
                     <br> Tamil Nadu, India
                 </p>
@@ -401,7 +416,7 @@
 		  <div class="col-12 footer_notes">
 			 <p class="text-gray-dark text-center w-100 wow fadeInDown animated animate-on-scroll"  
              style="visibility: visible; animation-name: fadeInDown; margin-top:15px; font-size:14px; ">
-              &copy; 2025 Kavinbaala TS. All rights reserved.
+              &copy; <span id="currentYear"></span> Kavinbaala TS. All rights reserved.
              </p>
 		  </div>
 	    </div>

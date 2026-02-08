@@ -615,6 +615,42 @@ img.animate-on-scroll {
     grid-column: 1 / 3;
 }
 
+/* Wrapper */
+.contact-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: stretch;
+}
+
+/* Keep your existing form grid */
+#contactForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Map Styling */
+.contact-map {
+    min-height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive - Stack on mobile */
+@media (max-width: 992px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map {
+        height: 350px;
+    }
+}
+
 
 /* === FOOTER === */
 .footer {
